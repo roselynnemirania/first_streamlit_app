@@ -50,7 +50,7 @@ except URLError as e:
 
 
 # do not run anything past here while we troubleshoot
-
+streamlit.stop()
 
 # import snowflake.connector
 
@@ -77,4 +77,3 @@ streamlit.write('Thanks for adding ', add_my_fruit)
 #This will not work correctly, but just go with it for now
 my_cur.execute("insert into fruit_load_list values ('from streamlit')");
 
-streamlit.stop()
